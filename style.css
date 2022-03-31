@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,12 +11,61 @@ body {
   background-color: whitesmoke;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #61a4bc;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-form label {
+  display: none;
+}
+
+.search-form input {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  height: 40px;
+  outline: none;
+}
+
+.search-form button {
+  border: none;
+  background-color: #fff;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  filter: brightness(90%);
+}
+
+.search-form button i {
+  font-size: 20px;
+  color: #61a4bc;
+}
+
 h1 {
-  text-align: center;
-  margin-top: 25px;
-  margin-bottom: 15px;
+  margin: 0;
   font-size: 40px;
   letter-spacing: 5px;
+  text-shadow: 0 2px 2px #fff;
+  color: #434a53;
 }
 
 /* loader */
@@ -37,7 +87,8 @@ h1 {
 
 /* image container */
 .image-container {
-  margin: 10px 30%;
+  margin: 20px 30%;
+  margin-top: 65px;
 }
 
 .image-container img {
